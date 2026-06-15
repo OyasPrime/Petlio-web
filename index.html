@@ -1,0 +1,525 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Petlio — One care app for every pet you love</title>
+<meta name="description" content="Petlio is the all-in-one care app for dogs, cats, birds, fish, turtles and every companion in between. Track health and weight, never miss a vet visit, keep memories private — in 16 languages.">
+<meta property="og:title" content="Petlio — One care app for every pet you love">
+<meta property="og:description" content="Health tracking, vet reminders, private photo albums and more — for every species, in 16 languages.">
+<meta property="og:type" content="website">
+<meta property="og:image" content="assets/app_icon.png">
+<link rel="icon" href="assets/favicon.png" type="image/png">
+<link rel="apple-touch-icon" href="assets/app_icon_192.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@500;600;700;800&family=Nunito+Sans:opsz,wght@6..12,400;6..12,600;6..12,700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/styles.css">
+</head>
+<body>
+
+<header class="site-head">
+  <div class="wrap">
+    <a class="brand" href="index.html" aria-label="Petlio">
+      <img class="wordmark" src="assets/petlio_wordmark.png" alt="Petlio">
+    </a>
+    <nav class="nav" aria-label="Primary">
+      <a href="#features" data-i18n="nav_features">Features</a>
+      <a href="#ai" data-i18n="nav_ai">AI</a>
+      <a href="#pricing" data-i18n="nav_pricing">Pricing</a>
+      <a href="#faq" data-i18n="nav_faq">FAQ</a>
+      <div class="lang-switch">
+        <button class="lang-btn" id="langBtn" aria-haspopup="true" aria-expanded="false">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M2 12h20M12 2a15 15 0 0 1 0 20M12 2a15 15 0 0 0 0 20"/></svg>
+          <span id="langLabel">EN</span>
+        </button>
+        <div class="lang-menu" id="langMenu" role="menu"></div>
+      </div>
+      <a href="#get" class="nav-cta" data-i18n="nav_get">Get the app</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+
+<section class="hero">
+  <div class="wrap">
+    <div class="hero-copy">
+      <span class="eyebrow" data-i18n="hero_badge">🐾 16 languages · Android &amp; iOS</span>
+      <h1 data-i18n-html="hero_title">One care app for <span class="mark">every pet</span> you love.</h1>
+      <p class="lede" data-i18n="hero_lede">Dogs, cats, birds, fish, turtles — Petlio keeps health records, weight history, vet reminders and precious photos in one calm, private place.</p>
+      <div class="cta-row" id="get">
+        <a class="store-btn" href="#get" aria-label="Get Petlio on Google Play">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M3.6 2.3a1 1 0 0 0-.5.9v17.6a1 1 0 0 0 .5.9l9.3-9.7L3.6 2.3Zm10.7 7.9 2.7-2.8L6.9 1.6a1 1 0 0 0-1-.1l8.4 8.7Zm0 3.6L5.9 22.5a1 1 0 0 0 1-.1l10-5.7-2.6-2.9Zm6.4-3-2.3-1.3-2.9 3 2.9 3 2.3-1.3a1 1 0 0 0 0-1.8l-.0-.3Z"/></svg>
+          <span><small data-i18n="store_get">Get it on</small>Google Play</span>
+        </a>
+        <a class="store-btn ghost" href="#get" aria-label="Download Petlio on the App Store">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M16.4 12.7c0-2 1.6-3 1.7-3a3.7 3.7 0 0 0-2.9-1.6c-1.2-.1-2.4.7-3 .7-.6 0-1.6-.7-2.6-.7-1.3 0-2.6.8-3.3 2-1.4 2.4-.4 6 1 8 .7 1 1.4 2 2.4 2 1 0 1.3-.6 2.5-.6s1.5.6 2.5.6 1.7-1 2.3-2a8.4 8.4 0 0 0 1-2.1 3.6 3.6 0 0 1-1.6-3.7Zm-2-6.8a3.4 3.4 0 0 0 .8-2.4 3.5 3.5 0 0 0-2.3 1.2 3.2 3.2 0 0 0-.8 2.3 2.9 2.9 0 0 0 2.3-1.1Z"/></svg>
+          <span><small data-i18n="store_download">Download on the</small>App Store</span>
+        </a>
+      </div>
+      <p class="soon" data-i18n="hero_soon">🚀 Launching soon — links go live the moment Petlio hits the stores.</p>
+    </div>
+    <div class="hero-art" aria-hidden="true">
+      <div class="ring">
+        <div class="node n1"><img src="assets/dog.webp" alt=""></div>
+        <div class="node n2"><img src="assets/fish.webp" alt=""></div>
+        <div class="node n3"><img src="assets/bird.webp" alt=""></div>
+        <div class="node n4"><img src="assets/turtle.webp" alt=""></div>
+        <div class="core"><img src="assets/cat.webp" alt="Cat"></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="strip">
+  <div class="wrap">
+    <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 13l4 4L19 7"/></svg> <span data-i18n="trust_offline">Works offline-first</span></span>
+    <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 13l4 4L19 7"/></svg> <span data-i18n="trust_private">Private by design</span></span>
+    <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 13l4 4L19 7"/></svg> <span data-i18n="trust_dark">Light &amp; dark mode</span></span>
+    <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 13l4 4L19 7"/></svg> <span data-i18n="trust_account">No account required to start</span></span>
+  </div>
+</div>
+
+<section id="features">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="kicker" data-i18n="feat_kicker">Everything in one place</span>
+      <h2 data-i18n="feat_title">Care that keeps up with real pet life</h2>
+      <p data-i18n="feat_sub">From the first vaccine to years of memories, Petlio holds the details so you don't have to.</p>
+    </div>
+    <div class="features">
+      <article class="card">
+        <div class="ic b"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="8" r="4"/><path d="M4 21c0-4 4-6 8-6s8 2 8 6"/></svg></div>
+        <h3 data-i18n="feat_1_t">Profiles for every pet</h3>
+        <p data-i18n="feat_1_d">One tidy profile per companion — species, breed, birthday, microchip and notes. Add as many as your family needs.</p>
+      </article>
+      <article class="card">
+        <div class="ic g"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 12h4l2 6 4-14 2 8h6"/></svg></div>
+        <h3 data-i18n="feat_2_t">Health &amp; weight history</h3>
+        <p data-i18n="feat_2_d">Log weight, water, mood and symptoms over time. Keep vaccines, parasite treatments and vet visits in a clear timeline with weekly and monthly reports.</p>
+      </article>
+      <article class="card">
+        <div class="ic y"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="18" rx="3"/><path d="M3 9h18M8 2v4M16 2v4"/><path d="m9 15 2 2 4-4"/></svg></div>
+        <h3 data-i18n="feat_3_t">Smart calendar &amp; reminders</h3>
+        <p data-i18n="feat_3_d">Vaccine and medication reminders push to your phone and sync straight to your device calendar, with a health-cycle view so nothing slips.</p>
+      </article>
+      <article class="card">
+        <div class="ic r"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="5" width="18" height="14" rx="3"/><circle cx="8.5" cy="10" r="1.5"/><path d="m4 17 5-5 4 4 3-3 4 4"/></svg></div>
+        <h3 data-i18n="feat_4_t">Private gallery &amp; sharing</h3>
+        <p data-i18n="feat_4_d">Memories grouped by year, lockable behind Face ID or a passcode. Keep albums private — or share them to Instagram and Facebook in a tap.</p>
+      </article>
+      <article class="card">
+        <div class="ic g"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M16 8a4 4 0 1 0-8 0M4 21c0-3 3-5 8-5s8 2 8 5"/><path d="M19 3v4M21 5h-4"/></svg></div>
+        <h3 data-i18n="feat_6_t">Petlio Match</h3>
+        <p data-i18n="feat_6_d">Find the right mate for your pet — filter by species, breed and age, then chat safely in-app. Full control, always.</p>
+      </article>
+      <article class="card">
+        <div class="ic r"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="7"/><path d="m21 21-4.3-4.3"/></svg></div>
+        <h3 data-i18n="feat_lost_t">Lost pet alerts</h3>
+        <p data-i18n="feat_lost_d">Create a lost-pet listing and share it instantly. Location-based search and community support help bring them home faster.</p>
+      </article>
+      <article class="card">
+        <div class="ic y"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 11l9-8 9 8"/><path d="M5 10v10h14V10"/><path d="M9 21v-6h6v6"/></svg></div>
+        <h3 data-i18n="feat_adopt_t">Adoption listings</h3>
+        <p data-i18n="feat_adopt_d">Rehoming a pet? Post a listing that flows into the adoption pool, with a safe application process for new families.</p>
+      </article>
+      <article class="card">
+        <div class="ic b"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="9" cy="9" r="3"/><circle cx="17" cy="11" r="2.5"/><path d="M3 20c0-3 2.5-5 6-5s6 2 6 5M15 20c0-2 1-3.5 3-3.5s3 1.5 3 3.5"/></svg></div>
+        <h3 data-i18n="feat_family_t">Petlio Family</h3>
+        <p data-i18n="feat_family_d">The whole family in one app — a shared pet profile, a common care calendar and tasks split between members.</p>
+      </article>
+      <article class="card">
+        <div class="ic g"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 11.5a8.4 8.4 0 0 1-9 8 9.6 9.6 0 0 1-4-1L3 20l1.5-4a8.4 8.4 0 0 1-1-4 8.5 8.5 0 0 1 17 0Z"/></svg></div>
+        <h3 data-i18n="feat_comm_t">Petlio Community</h3>
+        <p data-i18n="feat_comm_d">Chat with other pet owners, ask questions and share experiences — with reminders and notifications to stay in the loop.</p>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- FEATURE SHOWCASE (deep-dive with examples) -->
+<section id="showcase" class="showcase">
+  <div class="wrap">
+    <!-- Health & weight -->
+    <div class="show-row">
+      <div class="show-text g">
+        <span class="pill-tag" data-i18n="sc_health_tag">🩺 Health unit</span>
+        <h3 data-i18n="sc_health_t">See your pet's health at a glance</h3>
+        <p data-i18n="sc_health_d">Log weight, water, mood and symptoms — Petlio turns them into clear trends and daily, weekly and monthly reports. Patterns you'd miss become obvious.</p>
+        <ul>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 13l4 4L19 7"/></svg><span data-i18n="sc_health_1">Weight chart with trend detection</span></li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 13l4 4L19 7"/></svg><span data-i18n="sc_health_2">Vaccines &amp; parasite treatments in one timeline</span></li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 13l4 4L19 7"/></svg><span data-i18n="sc_health_3">Daily water &amp; mood tracking</span></li>
+        </ul>
+      </div>
+      <div class="demo">
+        <div class="demo-head"><div class="av"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 12h4l2 6 4-14 2 8h6"/></svg></div><div><b data-i18n="sc_health_demo_t">Max · Weight</b><span data-i18n="sc_health_demo_s">Last 6 months</span></div></div>
+        <div class="spark">
+          <div class="bar" style="height:55%"><span>30.1</span></div>
+          <div class="bar" style="height:62%"><span>31.0</span></div>
+          <div class="bar" style="height:70%"><span>31.8</span></div>
+          <div class="bar" style="height:66%"><span>31.4</span></div>
+          <div class="bar" style="height:60%"><span>30.9</span></div>
+          <div class="bar" style="height:52%"><span>30.2</span></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Smart calendar -->
+    <div class="show-row flip">
+      <div class="show-text">
+        <span class="pill-tag" data-i18n="sc_cal_tag">📅 Smart calendar</span>
+        <h3 data-i18n="sc_cal_t">Never miss a vaccine or a dose again</h3>
+        <p data-i18n="sc_cal_d">Reminders push to your phone and sync straight into your device calendar. A health-cycle view shows what's done, what's due and what's coming.</p>
+        <ul>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 13l4 4L19 7"/></svg><span data-i18n="sc_cal_1">Auto-sync with your device calendar</span></li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 13l4 4L19 7"/></svg><span data-i18n="sc_cal_2">Vaccine, medication &amp; grooming reminders</span></li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 13l4 4L19 7"/></svg><span data-i18n="sc_cal_3">Recurring schedules set once</span></li>
+        </ul>
+      </div>
+      <div class="demo">
+        <div class="demo-head"><div class="av"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="18" rx="3"/><path d="M3 9h18M8 2v4M16 2v4"/></svg></div><div><b data-i18n="sc_cal_demo_t">Upcoming care</b><span data-i18n="sc_cal_demo_s">Synced to calendar</span></div></div>
+        <div class="demo-row"><span class="lbl"><span class="dot" style="background:var(--green)"></span><span data-i18n="sc_cal_r1">Rabies vaccine</span></span><span class="chip done" data-i18n="sc_chip_done">Done</span></div>
+        <div class="demo-row"><span class="lbl"><span class="dot" style="background:var(--yellow)"></span><span data-i18n="sc_cal_r2">Flea treatment</span></span><span class="chip due" data-i18n="sc_chip_due">Due today</span></div>
+        <div class="demo-row"><span class="lbl"><span class="dot" style="background:var(--blue)"></span><span data-i18n="sc_cal_r3">Vet check-up</span></span><span class="chip soon" data-i18n="sc_chip_soon">In 5 days</span></div>
+      </div>
+    </div>
+
+    <!-- Lost pet -->
+    <div class="show-row">
+      <div class="show-text r">
+        <span class="pill-tag" data-i18n="sc_lost_tag">🔍 Lost pet</span>
+        <h3 data-i18n="sc_lost_t">If the worst happens, act in seconds</h3>
+        <p data-i18n="sc_lost_d">Turn any pet profile into a lost-pet poster and share it instantly. Location-based search rallies the Petlio community nearby to help bring them home.</p>
+        <ul>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 13l4 4L19 7"/></svg><span data-i18n="sc_lost_1">One-tap lost-pet listing from the profile</span></li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 13l4 4L19 7"/></svg><span data-i18n="sc_lost_2">Location-based community alerts</span></li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 13l4 4L19 7"/></svg><span data-i18n="sc_lost_3">Share to social media in a tap</span></li>
+        </ul>
+      </div>
+      <div class="demo poster">
+        <span class="tag-lost" data-i18n="sc_lost_poster_tag">⚠ LOST</span>
+        <div class="ph"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="11" cy="11" r="7"/><path d="m21 21-4.3-4.3"/></svg></div>
+        <b style="font-family:'Baloo 2';color:var(--navy)" data-i18n="sc_lost_poster_name">Luna · Golden Retriever</b>
+        <p class="meta" data-i18n="sc_lost_poster_meta">Last seen near Etimesgut · Notify 240 owners nearby</p>
+      </div>
+    </div>
+
+    <!-- Gallery -->
+    <div class="show-row flip">
+      <div class="show-text y">
+        <span class="pill-tag" data-i18n="sc_gal_tag">🖼️ Private gallery</span>
+        <h3 data-i18n="sc_gal_t">Every memory, organised and protected</h3>
+        <p data-i18n="sc_gal_d">Photos group themselves by year so moments are easy to find. Lock private albums behind Face ID — or share your best shots to Instagram and Facebook in a tap.</p>
+        <ul>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 13l4 4L19 7"/></svg><span data-i18n="sc_gal_1">Albums grouped by year automatically</span></li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 13l4 4L19 7"/></svg><span data-i18n="sc_gal_2">Lock private albums with Face ID or passcode</span></li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 13l4 4L19 7"/></svg><span data-i18n="sc_gal_3">Share to Instagram &amp; Facebook instantly</span></li>
+        </ul>
+      </div>
+      <div class="demo">
+        <div class="demo-head"><div class="av"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="5" width="18" height="14" rx="3"/><circle cx="8.5" cy="10" r="1.5"/><path d="m4 17 5-5 4 4 3-3 4 4"/></svg></div><div><b data-i18n="sc_gal_demo_t">Max's albums</b><span data-i18n="sc_gal_demo_s">312 photos</span></div></div>
+        <div class="gal">
+          <div class="cell"><img src="assets/dog.webp" alt=""><span class="yr">2024</span></div>
+          <div class="cell"><img src="assets/breeds/dog_golden_retriever.webp" alt=""><span class="yr">2025</span></div>
+          <div class="cell lock"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="5" y="11" width="14" height="10" rx="2"/><path d="M8 11V7a4 4 0 0 1 8 0v4"/></svg></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="ai" class="ai-band">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="kicker" data-i18n="ai_kicker">🤖 Petlio AI</span>
+      <h2 data-i18n="ai_title">Two kinds of intelligence, one app</h2>
+      <p data-i18n="ai_sub">Your data becomes smart — Petlio AI thinks for you, and answers when you ask.</p>
+    </div>
+    <div class="ai-grid">
+      <div class="ai-card smart">
+        <span class="tag" data-i18n="ai_smart_tag">⚡ Smart AI</span>
+        <h3 data-i18n="ai_smart_t">It reads your pet's data for you</h3>
+        <p data-i18n="ai_smart_d">From what you log daily — weight, water, mood, vaccines, health notes — Smart AI spots patterns and surfaces quick summaries, alerts and suggestions automatically.</p>
+        <div class="ai-bubble"><span class="who" data-i18n="ai_smart_ex_who">Petlio noticed</span><span data-i18n="ai_smart_ex">"Weight dropped over the last week — a vet check is recommended."</span></div>
+        <div class="ai-bubble"><span class="who" data-i18n="ai_smart_ex2_who">Reminder</span><span data-i18n="ai_smart_ex2">"No water intake logged today — want a reminder?"</span></div>
+      </div>
+      <div class="ai-card chat">
+        <span class="tag" data-i18n="ai_chat_tag">💬 Chat AI</span>
+        <h3 data-i18n="ai_chat_t">Ask anything about your pet</h3>
+        <p data-i18n="ai_chat_d">Type any question about your companion and get a clear, instant answer — from feeding to behaviour — with guidance toward a vet when it matters.</p>
+        <div class="ai-bubble you"><span class="who" data-i18n="ai_chat_you">You</span><span data-i18n="ai_chat_q">"Why does my cat sleep so much?"</span></div>
+        <div class="ai-bubble"><span class="who" data-i18n="ai_chat_ai">Petlio AI</span><span data-i18n="ai_chat_a">"Cats naturally sleep 12–16 hours a day. Here's what's normal — and the signs worth a vet visit…"</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="breeds" class="breeds-band">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="kicker" data-i18n="breed_kicker">40+ breeds &amp; growing</span>
+      <h2 data-i18n="breed_title">A breed library that recognises your pet</h2>
+      <p data-i18n="breed_sub">Pick your pet's exact breed and Petlio tailors the profile — with the right artwork, fields and care tips.</p>
+    </div>
+    <div class="breed-scroll">
+      <div class="breed-card"><img src="assets/breeds/dog_golden_retriever.webp" alt="Golden Retriever"><div class="meta"><div class="sp" data-i18n="sp_dog">Dog</div><div class="bn">Golden Retriever</div></div></div>
+      <div class="breed-card"><img src="assets/breeds/cat_maine_coon.webp" alt="Maine Coon"><div class="meta"><div class="sp" data-i18n="sp_cat">Cat</div><div class="bn">Maine Coon</div></div></div>
+      <div class="breed-card"><img src="assets/breeds/bird_cockatiel.webp" alt="Cockatiel"><div class="meta"><div class="sp" data-i18n="sp_bird">Bird</div><div class="bn">Cockatiel</div></div></div>
+      <div class="breed-card"><img src="assets/breeds/fish_betta.webp" alt="Betta"><div class="meta"><div class="sp" data-i18n="sp_fish">Fish</div><div class="bn">Betta</div></div></div>
+      <div class="breed-card"><img src="assets/breeds/turtle_red_eared_slider.webp" alt="Red-Eared Slider"><div class="meta"><div class="sp" data-i18n="sp_rept">Reptile</div><div class="bn">Red-Eared Slider</div></div></div>
+      <div class="breed-card"><img src="assets/breeds/dog_german_shepherd.webp" alt="German Shepherd"><div class="meta"><div class="sp" data-i18n="sp_dog">Dog</div><div class="bn">German Shepherd</div></div></div>
+      <div class="breed-card"><img src="assets/breeds/cat_persian.webp" alt="Persian"><div class="meta"><div class="sp" data-i18n="sp_cat">Cat</div><div class="bn">Persian</div></div></div>
+      <div class="breed-card"><img src="assets/breeds/bird_parrot.webp" alt="Parrot"><div class="meta"><div class="sp" data-i18n="sp_bird">Bird</div><div class="bn">Parrot</div></div></div>
+      <div class="breed-card"><img src="assets/breeds/fish_koi.webp" alt="Koi"><div class="meta"><div class="sp" data-i18n="sp_fish">Fish</div><div class="bn">Koi</div></div></div>
+      <div class="breed-card"><img src="assets/breeds/dog_french_bulldog.webp" alt="French Bulldog"><div class="meta"><div class="sp" data-i18n="sp_dog">Dog</div><div class="bn">French Bulldog</div></div></div>
+      <div class="breed-card"><img src="assets/breeds/cat_british_shorthair.webp" alt="British Shorthair"><div class="meta"><div class="sp" data-i18n="sp_cat">Cat</div><div class="bn">British Shorthair</div></div></div>
+      <div class="breed-card"><img src="assets/breeds/turtle_greek_tortoise.webp" alt="Greek Tortoise"><div class="meta"><div class="sp" data-i18n="sp_rept">Reptile</div><div class="bn">Greek Tortoise</div></div></div>
+      <div class="breed-card"><img src="assets/breeds/bird_budgie.webp" alt="Budgie"><div class="meta"><div class="sp" data-i18n="sp_bird">Bird</div><div class="bn">Budgie</div></div></div>
+      <div class="breed-card"><img src="assets/breeds/fish_goldfish.webp" alt="Goldfish"><div class="meta"><div class="sp" data-i18n="sp_fish">Fish</div><div class="bn">Goldfish</div></div></div>
+    </div>
+    <p class="breed-note" data-i18n="breed_note">← Scroll to explore · dogs, cats, birds, fish and reptiles, each with their own breeds.</p>
+  </div>
+</section>
+
+<section id="share" class="share">
+  <div class="wrap">
+    <div>
+      <span class="kicker" data-i18n="share_kicker">Care that travels with you</span>
+      <h2 data-i18n="share_title">Your pet's whole story, ready when it matters</h2>
+      <ul class="list">
+        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 13l4 4L19 7"/></svg><div><b data-i18n="share_1_t">At the vet, in seconds</b><span data-i18n="share_1_d">Pull up weight history, vaccines and medications so nothing gets forgotten in the exam room.</span></div></li>
+        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 13l4 4L19 7"/></svg><div><b data-i18n="share_2_t">Synced across your devices</b><span data-i18n="share_2_d">Sign in and your records follow you from phone to tablet, backed up safely in the cloud.</span></div></li>
+        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 13l4 4L19 7"/></svg><div><b data-i18n="share_3_t">Export a clean PDF</b><span data-i18n="share_3_d">Generate a tidy health report to share with a vet, a sitter or a new family member.</span></div></li>
+        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 13l4 4L19 7"/></svg><div><b data-i18n="share_4_t">Works offline first</b><span data-i18n="share_4_d">Add records anywhere — they sync the moment you're back online.</span></div></li>
+      </ul>
+    </div>
+    <div class="share-art"><img src="assets/app_icon.png" alt="Petlio" style="border-radius:28px"></div>
+  </div>
+</section>
+
+<section id="species" class="species">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="kicker" data-i18n="sp_kicker">Not just cats &amp; dogs</span>
+      <h2 data-i18n="sp_title">Built for the whole animal kingdom</h2>
+      <p data-i18n="sp_sub">Petlio speaks every species — with breed libraries, the right fields and care tips for each.</p>
+    </div>
+    <div class="species-grid">
+      <figure><div class="ph" style="--c:var(--red)"><img src="assets/dog.webp" alt="Dogs"></div><figcaption data-i18n="sp_dogs">Dogs</figcaption></figure>
+      <figure><div class="ph" style="--c:var(--navy)"><img src="assets/cat.webp" alt="Cats"></div><figcaption data-i18n="sp_cats">Cats</figcaption></figure>
+      <figure><div class="ph" style="--c:var(--yellow)"><img src="assets/bird.webp" alt="Birds"></div><figcaption data-i18n="sp_birds">Birds</figcaption></figure>
+      <figure><div class="ph" style="--c:var(--green)"><img src="assets/fish.webp" alt="Fish"></div><figcaption data-i18n="sp_fishs">Fish</figcaption></figure>
+      <figure><div class="ph" style="--c:var(--blue)"><img src="assets/turtle.webp" alt="Reptiles"></div><figcaption data-i18n="sp_repts">Reptiles</figcaption></figure>
+    </div>
+  </div>
+</section>
+
+<!-- HOW IT WORKS -->
+<section id="how">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="kicker" data-i18n="how_kicker">Up and running in minutes</span>
+      <h2 data-i18n="how_title">How Petlio works</h2>
+    </div>
+    <div class="how-grid">
+      <div class="how-step">
+        <div class="circle"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 3v12m0 0 4-4m-4 4-4-4"/><path d="M4 17v2a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-2"/></svg></div>
+        <h3 data-i18n="how_1_t">Download</h3>
+        <p data-i18n="how_1_d">Get Petlio free from the App Store or Google Play — no account needed to start.</p>
+      </div>
+      <div class="how-step">
+        <div class="circle"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="8" r="4"/><path d="M4 21c0-4 4-6 8-6s8 2 8 6"/><path d="M19 3v4M21 5h-4"/></svg></div>
+        <h3 data-i18n="how_2_t">Add your pet</h3>
+        <p data-i18n="how_2_d">Create a profile in under a minute — species, breed, photo and the basics.</p>
+      </div>
+      <div class="how-step">
+        <div class="circle"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 21s-7-4.5-7-10a4 4 0 0 1 7-2.5A4 4 0 0 1 19 11c0 5.5-7 10-7 10Z"/></svg></div>
+        <h3 data-i18n="how_3_t">Make life easier</h3>
+        <p data-i18n="how_3_d">Track health, get reminders, store memories and let Petlio AI do the thinking.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="fair" class="fair">
+  <div class="wrap">
+    <div>
+      <span class="kicker" style="color:var(--yellow)" data-i18n="fair_kicker">Free &amp; fair</span>
+      <h2 data-i18n="fair_title">Premium features, never a paywall you can't pass.</h2>
+      <p data-i18n="fair_sub">Petlio is free to use. Premium unlocks extras — and if you'd rather not subscribe, you can open almost any premium feature by watching a short ad instead. Your choice, every time.</p>
+    </div>
+    <div class="pills">
+      <div class="pill"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 13l4 4L19 7"/></svg><div><b data-i18n="fair_1_t">Use it free, forever</b><span data-i18n="fair_1_d">Core tracking, reminders and profiles cost nothing.</span></div></div>
+      <div class="pill"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="5 3 19 12 5 21 5 3"/></svg><div><b data-i18n="fair_2_t">Watch an ad, unlock the feature</b><span data-i18n="fair_2_d">Prefer not to pay? A quick rewarded ad opens the same premium tools.</span></div></div>
+      <div class="pill"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2 4 6v6c0 5 8 8 8 8s8-3 8-8V6l-8-4Z"/></svg><div><b data-i18n="fair_3_t">Consent you control</b><span data-i18n="fair_3_d">Ads respect GDPR/ATT consent — decline tracking and the app still works.</span></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- PRICING -->
+<section id="pricing">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="kicker" data-i18n="price_kicker">Accessible for everyone</span>
+      <h2 data-i18n="price_title">Choose how you use Petlio</h2>
+      <p data-i18n="price_sub">Get almost everything free by watching short ads — or go Premium for an ad-free experience.</p>
+    </div>
+    <div class="price-grid">
+      <div class="price-card featured">
+        <span class="ribbon" data-i18n="price_free_ribbon">Most popular</span>
+        <h3 data-i18n="price_free_t">Free</h3>
+        <div class="price" data-i18n-html="price_free_p">0₺ <small>forever</small></div>
+        <p class="desc" data-i18n="price_free_d">Reach ~90% of features just by watching short ads. No payment, ever.</p>
+        <ul>
+          <li class="yes"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 13l4 4L19 7"/></svg><span data-i18n="price_free_1">All core care: profiles, health, reminders</span></li>
+          <li class="yes"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 13l4 4L19 7"/></svg><span data-i18n="price_free_2">Unlock premium features with a short ad</span></li>
+          <li class="yes"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 13l4 4L19 7"/></svg><span data-i18n="price_free_3">Petlio AI, Match, Family &amp; Community</span></li>
+          <li class="yes"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 13l4 4L19 7"/></svg><span data-i18n="price_free_4">16 languages, dark mode, cloud sync</span></li>
+        </ul>
+        <a href="#get" class="price-btn primary" data-i18n="price_free_btn">Start free</a>
+      </div>
+      <div class="price-card">
+        <h3 data-i18n="price_prem_t">Premium</h3>
+        <div class="price" data-i18n-html="price_prem_p"><small data-i18n="price_prem_soon">Pricing soon</small></div>
+        <p class="desc" data-i18n="price_prem_d">Everything in Free, with no ads and 100% of features unlocked instantly.</p>
+        <ul>
+          <li class="yes"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 13l4 4L19 7"/></svg><span data-i18n="price_prem_1">Completely ad-free experience</span></li>
+          <li class="yes"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 13l4 4L19 7"/></svg><span data-i18n="price_prem_2">100% of features, unlocked instantly</span></li>
+          <li class="yes"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 13l4 4L19 7"/></svg><span data-i18n="price_prem_3">Priority support</span></li>
+          <li class="yes"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 13l4 4L19 7"/></svg><span data-i18n="price_prem_4">Support Petlio's development</span></li>
+        </ul>
+        <a href="#get" class="price-btn ghost" data-i18n="price_prem_btn">Coming at launch</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="langs">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="kicker" data-i18n="lang_kicker">Wherever you are</span>
+      <h2 data-i18n="lang_title">Petlio speaks 16 languages</h2>
+    </div>
+    <div class="lang-chips">
+      <span>English</span><span>Türkçe</span><span>Español</span><span>Deutsch</span>
+      <span>Français</span><span>Italiano</span><span>Nederlands</span><span>Polski</span>
+      <span>Русский</span><span>العربية</span><span>हिन्दी</span><span>日本語</span>
+      <span>한국어</span><span>中文</span><span>Bahasa Indonesia</span><span>Português</span>
+    </div>
+  </div>
+</section>
+
+<section class="early">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="kicker" data-i18n="early_kicker">Launching soon</span>
+      <h2 data-i18n="early_title">Be among the first to use Petlio</h2>
+      <p data-i18n="early_sub">Petlio is getting ready for the stores. Here's what early users can count on from day one.</p>
+    </div>
+    <div class="early-grid">
+      <div class="early-card"><div class="num b">5+</div><p data-i18n="early_1">Species supported — dogs, cats, birds, fish and reptiles, with room for more.</p></div>
+      <div class="early-card"><div class="num g">16</div><p data-i18n="early_2">Languages at launch, so Petlio feels native wherever you are.</p></div>
+      <div class="early-card"><div class="num y">0₺</div><p data-i18n="early_3">To start. Core care is free — unlock extras with Premium or a quick ad.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- REVIEWS -->
+<section id="reviews" class="reviews">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="kicker" data-i18n="rev_kicker">Your voice matters</span>
+      <h2 data-i18n="rev_title">Reviews from the Petlio community</h2>
+      <p data-i18n="rev_sub">Once you're signed in, you can leave a review and help other pet owners.</p>
+    </div>
+    <div class="review-empty">
+      <div class="stars" style="color:var(--yellow)">★★★★★</div>
+      <p data-i18n="rev_empty">Be the first to share your experience. Sign in to write a review — real reviews from real pet owners will appear here.</p>
+      <button class="signin" id="reviewSignIn">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="18" height="18"><path d="M15 3h4a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2h-4"/><path d="M10 17l5-5-5-5M15 12H3"/></svg>
+        <span data-i18n="rev_signin">Sign in to review</span>
+      </button>
+      <p class="note" data-i18n="rev_note">Reviews open when Petlio launches. Only signed-in users can post, to keep them genuine.</p>
+    </div>
+  </div>
+</section>
+
+<section id="faq">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="kicker" data-i18n="faq_kicker">Good to know</span>
+      <h2 data-i18n="faq_title">Frequently asked questions</h2>
+    </div>
+    <div class="faq-list">
+      <details class="faq-item"><summary data-i18n="faq_1_q">Is Petlio free?</summary><div class="a"><p data-i18n="faq_1_a">Yes. The core of Petlio — pet profiles, health and weight tracking, reminders — is free to use. Premium unlocks extras, and if you'd rather not subscribe you can open most premium features by watching a short rewarded ad instead.</p></div></details>
+      <details class="faq-item"><summary data-i18n="faq_2_q">Which pets can I track?</summary><div class="a"><p data-i18n="faq_2_a">Dogs, cats, birds, fish and reptiles, with a growing library of 40+ breeds. Each species gets the right fields and care tips, and you can add as many pets as your family needs.</p></div></details>
+      <details class="faq-item"><summary data-i18n="faq_3_q">Do I need an account?</summary><div class="a"><p data-i18n="faq_3_a">No — you can start right away and keep everything on your device. Sign in only if you want to back up and sync your records across devices.</p></div></details>
+      <details class="faq-item"><summary data-i18n="faq_4_q">Where is my data stored, and is it private?</summary><div class="a"><p data-i18n="faq_4_a">Local records stay on your device. If you sign in, your data is securely stored in Google Firebase and protected with App Check. We never sell your data. You can lock private photo albums behind Face ID, fingerprint or a passcode, and delete everything at any time.</p></div></details>
+      <details class="faq-item"><summary data-i18n="faq_5_q">Can Petlio remind me about vaccines and medications?</summary><div class="a"><p data-i18n="faq_5_a">Yes. Set reminders for vaccines, medications and routines — they push to your phone and sync straight into your device calendar so nothing slips.</p></div></details>
+      <details class="faq-item"><summary data-i18n="faq_6_q">Is the Petlio AI a replacement for a vet?</summary><div class="a"><p data-i18n="faq_6_a">No. Petlio AI gives general, pet-aware guidance and points you to a professional when it matters — but it is never a substitute for a licensed veterinarian. For any health concern, see your vet.</p></div></details>
+      <details class="faq-item"><summary data-i18n="faq_7_q">How do I delete my data?</summary><div class="a"><p data-i18n="faq_7_a">Delete individual records in the app, or remove your whole account from Settings. You can also email us. Full steps are on the Delete my data page.</p></div></details>
+    </div>
+  </div>
+</section>
+
+<section class="contact">
+  <div class="wrap">
+    <div class="box">
+      <h2 data-i18n="contact_title">Still have a question?</h2>
+      <p data-i18n="contact_sub">We'd love to hear from you — about a feature, a bug, your pet, anything. We read every message.</p>
+      <a class="mailbtn" href="mailto:petlio.team@gmail.com">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="20" height="20"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg>
+        petlio.team@gmail.com
+      </a>
+    </div>
+  </div>
+</section>
+
+<section class="download">
+  <div class="wrap">
+    <div class="box">
+      <img class="app-mark" src="assets/app_icon.png" alt="Petlio app icon" style="border-radius:22px;box-shadow:var(--shadow)">
+      <h2 data-i18n="dl_title">Give every pet the care they deserve.</h2>
+      <p style="color:var(--muted);max-width:46ch;margin:14px auto 0;" data-i18n="dl_sub">Download Petlio and start your first pet profile in under a minute.</p>
+      <div class="cta-row">
+        <a class="store-btn" href="#get"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M3.6 2.3a1 1 0 0 0-.5.9v17.6a1 1 0 0 0 .5.9l9.3-9.7L3.6 2.3Zm10.7 7.9 2.7-2.8L6.9 1.6a1 1 0 0 0-1-.1l8.4 8.7Zm0 3.6L5.9 22.5a1 1 0 0 0 1-.1l10-5.7-2.6-2.9Zm6.4-3-2.3-1.3-2.9 3 2.9 3 2.3-1.3a1 1 0 0 0 0-1.8l-.0-.3Z"/></svg><span><small data-i18n="store_get">Get it on</small>Google Play</span></a>
+        <a class="store-btn ghost" href="#get"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M16.4 12.7c0-2 1.6-3 1.7-3a3.7 3.7 0 0 0-2.9-1.6c-1.2-.1-2.4.7-3 .7-.6 0-1.6-.7-2.6-.7-1.3 0-2.6.8-3.3 2-1.4 2.4-.4 6 1 8 .7 1 1.4 2 2.4 2 1 0 1.3-.6 2.5-.6s1.5.6 2.5.6 1.7-1 2.3-2a8.4 8.4 0 0 0 1-2.1 3.6 3.6 0 0 1-1.6-3.7Zm-2-6.8a3.4 3.4 0 0 0 .8-2.4 3.5 3.5 0 0 0-2.3 1.2 3.2 3.2 0 0 0-.8 2.3 2.9 2.9 0 0 0 2.3-1.1Z"/></svg><span><small data-i18n="store_download">Download on the</small>App Store</span></a>
+      </div>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer class="site-foot">
+  <div class="wrap">
+    <div>
+      <a class="brand" href="index.html"><img class="wordmark" src="assets/petlio_wordmark.png" alt="Petlio"></a>
+      <p data-i18n="foot_tagline">The all-in-one care app for every pet you love. Made with care for animals and the people who love them.</p>
+    </div>
+    <div>
+      <h4 data-i18n="foot_product">Product</h4>
+      <ul>
+        <li><a href="index.html#features" data-i18n="nav_features">Features</a></li>
+        <li><a href="index.html#breeds" data-i18n="nav_breeds">Breeds</a></li>
+        <li><a href="index.html#fair" data-i18n="nav_fair">Free &amp; fair</a></li>
+      </ul>
+    </div>
+    <div>
+      <h4 data-i18n="foot_legal">Legal &amp; support</h4>
+      <ul>
+        <li><a href="privacy.html" data-i18n="foot_privacy">Privacy Policy</a></li>
+        <li><a href="terms.html" data-i18n="foot_terms">Terms of Use</a></li>
+        <li><a href="delete-data.html" data-i18n="foot_delete">Delete my data</a></li>
+        <li><a href="mailto:petlio.team@gmail.com" data-i18n="foot_contact">Contact us</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="wrap"><div class="foot-base"><span data-i18n="foot_copy">© 2026 Petlio. All rights reserved.</span><span>petlio.team@gmail.com</span></div></div>
+</footer>
+
+<script src="assets/i18n.js"></script>
+</body>
+</html>
