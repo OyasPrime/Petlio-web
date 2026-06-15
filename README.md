@@ -21,9 +21,9 @@ HTML/CSS — derleme gerektirmez, doğrudan herhangi bir statik hosting'e yükle
 İkonu değiştirmek istersen yeni dosyayı aynı isimlerle koyman yeterli.
 
 ## E-posta adresini değiştirmek
-Şu an her yerde `petlio.team@gmail.com` yazılı. Başka bir adres kullanacaksan
+Şu an her yerde `info@petlio.pet` yazılı. Başka bir adres kullanacaksan
 tüm dosyalarda toplu değiştir (find & replace):
-  petlio.team@gmail.com  →  yeni adres
+  info@petlio.pet  →  yeni adres
 (4 HTML dosyasında geçer: index, privacy, terms, delete-data)
 
 ═══════════════════════════════════════════════════════════════
